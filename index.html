@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/tone"></script>
+    <title>SKRA</title>
+</head>
+
+<body>
+    <div class="synth">
+    <canvas id="canvas" width="400" height="240">
+        sharp screen emulation with canvas
+    </canvas>
+
+    <div class="controls" id="faders">
+            <input type="range" orient="vertical" class="slider-vertical fader" name="fader-0" list="marks" id="0" min="0" max="127" value="0" step="1" />
+    </div>
+
+    <div class="keyboard">
+        <button id="C" class="white-key key"/>
+        <button id="C#" class="black-key key" />
+        <button id="D" class="white-key key"/>
+        <button id="D#" class="black-key key" />
+        <button id="E" class="white-key key"/>
+        <button id="F" class="key-f white-key key"/>
+        <button id="F#" class="black-key key" />
+        <button id="G" class="white-key key"/>
+        <button id="G#" class="black-key key" />
+        <button id="A" class="white-key key"/>
+        <button id="A#" class="black-key key" />
+        <button id="B" class="white-key key"/>
+    </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="midi.js"></script>
+    <script type="module" src="synth.js"></script>
+    <script type="module" src="controls.js"></script>
+</body>
+
+</html>

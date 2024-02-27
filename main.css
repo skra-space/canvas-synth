@@ -1,0 +1,78 @@
+.synth {
+    width: 420px;
+    margin: auto;
+    border: solid #aaa;
+}
+
+canvas {
+    border: solid black;
+    background-color: #aaa;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    font-smooth: none;
+    margin: 5px;
+}
+
+.slider-vertical {
+    appearance: slider-vertical;
+    height: 250px;
+}
+
+.controls {
+    width: auto;
+    margin: 20px 20px;
+}
+  
+.keyboard {
+    width: auto;
+    position: relative;
+    padding: 0;
+    margin: 10px 30px;
+}
+
+
+.key {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 160px;
+    text-align: center;
+    box-shadow: 2px 2px darkgray;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: 0px -7px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.white-key {
+    width: 50px;
+    height: 160px;
+    z-index: 1;
+    background-color: blanchedalmond;
+}
+
+.key-f {
+    margin-left: 9px;
+}
+
+.black-key {
+    width: 30px;
+    height: 130px;
+    z-index: 2;
+    vertical-align: top;
+    background-color: black;
+}
+
+.key:hover {
+    background-color: #ccc;
+}
+
+.key:active,
+.active {
+    background-color: #bcbcbc;
+}
